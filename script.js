@@ -2,14 +2,12 @@ function getComputerChoice() {
   let weapon = Math.round(Math.random() * 2);
 
   if (weapon === 0) {
-    document.getElementById("cpuWeapon").innerHTML = `Rock`;
+    return "Rock";
   } else if (weapon === 1) {
-    document.getElementById("cpuWeapon").innerHTML = `Paper`;
+    return "Paper";
   } else {
-    document.getElementById("cpuWeapon").innerHTML = `Scissors`;
+    return "Scissors";
   }
-
-  //   console.log((document.getElementById("cpuWeapon").innerHTML = `${weapon}`));
 }
 
 getComputerChoice();
