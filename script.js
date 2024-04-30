@@ -10,4 +10,24 @@ function getComputerChoice() {
   }
 }
 
+function getHumanChoice() {
+  let form = document.querySelector("form");
+  const humanWeapon = document.querySelector("#hWeapon");
+
+  form.addEventListener(
+    "submit",
+    (event) => {
+      const data = new FormData(form);
+      let output = "";
+      for (const entry of data) {
+        output = `Your weapon is: ${entry[1]}\r`;
+      }
+      humanWeapon.innerText = output;
+      event.preventDefault();
+    },
+    false
+  );
+}
+
+getHumanChoice();
 getComputerChoice();

@@ -12,13 +12,26 @@
       <p>Play the popular classic hand game but now on PC.</p>
     </div>
 
-    <div>
+    <form>
       <h2>Player:</h2>
-      <p>Choose your weapon</p>
-      <button id="rock">Rock</button>
-      <button id="paper">Paper</button>
-      <button id="scissors">Scissors</button>
-    </div>
+      <fieldset style="width: 200px">
+        <legend>Choose your weapon:</legend>
+        <div>
+          <input type="radio" name="weapon" id="rock" value="rock" />
+          <label for="rock">Rock</label>
+        </div>
+        <div>
+          <input type="radio" name="weapon" id="paper" value="paper" />
+          <label for="paper">Paper</label>
+        </div>
+        <div>
+          <input type="radio" name="weapon" id="scissors" value="scissors" />
+          <label for="scissors">Scissors</label>
+        </div>
+        <button type="submit">Play</button>
+        <p id="hWeapon"></p>
+      </fieldset>
+    </form>
 
     <div>
       <h2>Computer plays:</h2>
